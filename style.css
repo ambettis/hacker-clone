@@ -1,0 +1,50 @@
+html, body {
+    width: 100%;
+}
+table {
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+    counter-reset: rowNumber;
+}
+
+
+table .tablenum {
+    counter-increment: rowNumber;
+}
+
+table .tablenum td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+symbol {
+  color: white;
+  opacity: 0;
+}
+
+.header a {
+  text-decoration: none;
+}
+.greytext {
+  font-size: .75em;
+  color: grey;
+}
+a:visited{
+  color:inherit;
+}
+
+.navbar {
+  font-weight: 100;
+}
+
+.header {
+  background-color: darkorange;
+}
+
+.maintext{
+  background-color: beige;
+}
+
+.divtext {
+}
